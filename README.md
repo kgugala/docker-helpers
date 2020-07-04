@@ -29,7 +29,7 @@ debian_docker
 ```
 
 This will bind the current directory in the docker session.
-Any additional directory can be provided as arguments e.g:
+Any additional directories can be provided as arguments e.g:
 
 ```
 debian_docker /tmp /var/tftp
