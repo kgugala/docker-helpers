@@ -1,0 +1,10 @@
+debian_docker() {
+    my_dir=`pwd`
+    uid=`id -u`
+    docker_args="-v ${my_dir}:${my_dir}"
+    for arg in $@; do
+        docker_args="${docker_args} -v $arg:$arg"
+    done
+    docker run -w ${my_dir} --user ${uid}:${uid} ${docker_args} -it debian-develop
+}
+
