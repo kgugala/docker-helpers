@@ -3,7 +3,7 @@
 ## Description
 
 This project provides simple helper for running docker interactive terminals.
-Helper scripts automatically bind the directory where it is run.
+Helper script automatically binds the directory where it is run.
 Any additional folders can be provided as arguments.
 
 The user in the docker sessions will have the same uid as the one who called the command.
@@ -17,7 +17,7 @@ To install the helpers simply run:
 make install
 ```
 
-This will build docker image and entries to your `.bashrc` file.
+This will build docker image and add entries to your `.bashrc` file.
 
 
 ## Usage
