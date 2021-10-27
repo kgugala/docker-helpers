@@ -5,3 +5,4 @@ RUN pip3 install cmake
 RUN useradd -u {UID} {UNAME}
 RUN mkdir {HOME}
 RUN chown {UNAME}:{UNAME} {HOME}
+RUN echo "{UNAME}     ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
